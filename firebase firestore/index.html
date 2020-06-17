@@ -47,7 +47,9 @@
             firebase.initializeApp(firebaseConfig);
             firebase.analytics();
             const db = firebase.firestore();
-            // db.settings({ timeStampsInSnapshots: true })
+
+            //update firestore settings(for >= version 5)
+            // db.settings({ timestampsInSnapshots: true })
         </script>
         <script src="app.js"></script>
     </body>
